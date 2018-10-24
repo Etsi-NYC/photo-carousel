@@ -75,10 +75,10 @@ export default class PhotoCarousel extends React.Component {
 			borderRadius: '50%',
 			height: '39px',
 			width: '39px',
-			positon: 'relative',
-			display: 'flex',
-			alignItems: 'center',
-			border: 0
+			position: 'relative',
+			zIndex: 4,
+			textAlign: 'center',
+			display: 'flex'
 		}
 
   	return (

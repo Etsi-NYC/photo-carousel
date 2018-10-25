@@ -1,9 +1,8 @@
 import React from 'react';
 import Carousel from './Carousel.js';
-import { ToastContainer, toast, Slide, cssTransition} from 'react-toastify';
+import { ToastContainer, toast, cssTransition} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './style.css';
-
 
 var toastId1;
 var toastId2;
@@ -13,8 +12,6 @@ const transition = cssTransition({
   exit: 'fadeOut',
   duration: [200, 400]
 });
-
-
 
 export default class PhotoCarousel extends React.Component {
   constructor(props) {
@@ -55,7 +52,6 @@ export default class PhotoCarousel extends React.Component {
 		}, 450)
 		
 	};
-
 
   render () {
 		var svg;

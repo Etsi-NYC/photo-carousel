@@ -29,10 +29,10 @@
 }
 
 .toast {
-  background-color: rgb(254, 207, 132);
+  background-color: rgb(254, 207, 132) !important;
   border-bottom-color: rgb(254, 199, 117);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-image-outset: 0px;
@@ -47,18 +47,18 @@
   border-right-style: solid;
   border-right-width: 1px;
   border-top-color: rgb(254, 199, 117);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 6px !important;
+  border-top-right-radius: 6px !important;
   border-top-style: solid;
   border-top-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px 0px;
-  color: rgb(34, 34, 34);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px 0px !important;
+  color: rgb(34, 34, 34) !important;
   font-family: "Graphik Webfont", -apple-system, BlinkMacSystemFont, "Roboto",
-    "Droid Sans", "Segoe UI", "Helvetica", Arial, sans-serif;
+    "Droid Sans", "Segoe UI", "Helvetica", Arial, sans-serif !important;
   font-size: 15px;
-  max-height: 20px;
+  max-height: 20px !important;
   width: 616px;
-  position: relative;
+  position: relative !important;
   text-align: left;
   right: 50%;
 }
@@ -117,19 +117,3 @@
 	display: list-item;
 }
 
-/* Image */
-
-.fadeImage {
-	-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-		 -moz-animation: fadein 4s; /* Firefox < 16 */
-			-ms-animation: fadein 4s; /* Internet Explorer */
-			 -o-animation: fadein 4s; /* Opera < 12.1 */
-					animation: fadein 4s;
-	display: block;
-	margin: 25px auto;
-}
-
-@keyframes fadein {
-	from { opacity: 0; }
-	to   { opacity: 1; }
-}

@@ -45,7 +45,7 @@ const PhotoPreview = ({urls, clickFunction, currIndex}) => {
 			<ul className="list-unstyled circles">
 				{urls.map((url, i) => {
 					return (
-						<li className="thumbnail">
+						<li className="thumbnail" key={i}>
 							<ImageThumbnail url={url} index={i} clickFunction={clickFunction} currIndex={currIndex}/>
 						</li>
 					)}

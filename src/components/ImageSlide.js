@@ -27,7 +27,6 @@ const animation = () =>
 		${fadeIn} 0.5s;
 	`
 
-
 const ImageSlide = (props) => {
 	const Img = styled.img`
 		max-width: 100%;

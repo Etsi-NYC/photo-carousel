@@ -8,7 +8,8 @@ library.add(faAngleLeft)
 library.add(faAngleRight)
 
 class App extends Component {
-  render() {
+
+	render() {
     return (
       <div className="App">
         <PhotoCarousel />

@@ -21,9 +21,9 @@ export default class PhotoCarousel extends React.Component {
 		};
 		this.alert1 = this.alert1.bind(this);
 		this.alert2 = this.alert2.bind(this);
-
 	}
 	
+
 	alert1() {
 		toast.dismiss(toastId2);
 		this.setState({

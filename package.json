@@ -24,7 +24,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "server-dev": "nodemon server/index.js",
-    "build": "webpack"
+		"build": "webpack",
+		"seed": "node populate.js"
   },
   "keywords": [],
   "author": "",

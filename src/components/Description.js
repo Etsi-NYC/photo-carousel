@@ -53,18 +53,6 @@ var DescriptionHeader = styled.h2`
   width: 570px;
 `;
 
-var TextBody = styled.div`
-  color: rgb(34, 34, 34);
-  display: block;
-  font-family: "Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans",
-    "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  white-space: pre-line;
-  width: 570px;
-  overflow-wrap: break-word;
-  word-break: break-all;
-  hyphens: auto;
-`;
 
 var Divider = styled.a`
   color: black;
@@ -94,6 +82,24 @@ export default class Description extends React.Component {
   }
 
   render() {
+		var TextBody = styled.div`
+			color: rgb(34, 34, 34);
+			display: block;
+			font-family: "Graphik Webfont", -apple-system, system-ui, Roboto, "Droid Sans",
+				"Segoe UI", Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			white-space: pre-line;
+			width: 570px;
+			overflow-wrap: break-word;
+			word-break: break-all;
+			hyphens: auto;
+			background-image: ${this.state.showText ? '' : '-webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.2)))'};
+			-webkit-background-clip: ${this.state.showText ? '' : 'text'};
+			-webkit-text-fill-color: ${this.state.showText ? '' : 'transparent'};
+		`;
+
+
+
     if (!this.state.showText) {
       return (
         <DescriptionDiv>

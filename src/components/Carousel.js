@@ -8,6 +8,15 @@ import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 import axios from "axios";
 
+const imgUrls = [
+  "https://i.etsystatic.com/10554944/r/il/d19abc/1630595027/il_570xN.1630595027_mapr.jpg",
+  "https://i.etsystatic.com/10554944/r/il/125047/1619659946/il_570xN.1619659946_rhdh.jpg",
+  "https://i.etsystatic.com/10554944/r/il/0a11c0/1688458893/il_570xN.1688458893_nwdu.jpg",
+  "https://i.etsystatic.com/10554944/r/il/648a9f/1641033512/il_570xN.1641033512_ngox.jpg",
+  "https://i.etsystatic.com/10554944/r/il/e8e7c9/1690179033/il_570xN.1690179033_lppt.jpg",
+  "https://i.etsystatic.com/10554944/r/il/b6bc4a/1690179089/il_570xN.1690179089_ohob.jpg"
+];
+
 export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +24,7 @@ export default class Carousel extends React.Component {
     this.state = {
       currentImageIndex: 0,
       fade: false,
-      imgUrls: []
+      imgUrls: imgUrls
     };
 
     this.nextSlide = this.nextSlide.bind(this);
